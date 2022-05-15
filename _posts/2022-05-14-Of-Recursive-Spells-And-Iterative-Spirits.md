@@ -55,7 +55,7 @@ Now, when the spell above is pushed into the matrix through a medium like
 whose life goes as follows:
 
 ```scheme
-(factorial 5)
+=> (factorial 5)
 (* 5 (factorial 4))
 (* 5 (* 4 (factorial 3)))
 (* 5 (* 4 (* 3 (factorial 2))))
@@ -70,7 +70,7 @@ whose life goes as follows:
 ```
 
 The thing to note about the spirit above is that overtime it grows in
-space (ie the number of items in the list grows first before it starts
+space (ie the depth of the list grows first before it starts
 to reduce). That's essentially what makes a recursive spirit (process).
 We started with a recursive spell and we ended up with a recursive spell.
 
@@ -93,7 +93,7 @@ Let's rewrite our recursive spell in a slightly different way:
 This new factorial will decay as follows:
 
 ```scheme
-(factorial2 5 1)
+=> (factorial2 5 1)
 (factorial2 (- 5 1) (* 1 5))
 (factorial2 (- 4 1) (* 5 4))
 (factorial2 (- 3 1) (* 20 3))
@@ -104,13 +104,13 @@ This new factorial will decay as follows:
 ```
 
 Notice that in this iteration of the factorial spell, the original list we
-started with did not grow. This lack of growth in space is characteristic
-of what is called is an iterative spirit. We started with what is obviously
-a recursive spell but we somehow ended up with an iterative spirit instead
-of a recursive one. We are able to generate an iterative spirit from a
-recursive spell by specifying our spell in a style that is called
-[tail call recursion](https://en.wikipedia.org/wiki/Tail_call). You can
-loosely think of tail call recursion as a recusion in which the very last
+started with did not grow in depth between recursive calls. This lack of
+growth in space is characteristic of what is called is an iterative spirit.
+We started with what is obviously a recursive spell but we somehow ended up
+with an iterative spirit instead of a recursive one. We are able to generate
+an iterative spirit from a recursive spell by specifying our spell in a style
+that is called [tail call recursion](https://en.wikipedia.org/wiki/Tail_call).
+You can loosely think of tail call recursion as a recusion in which the very last
 operation in the spell is an invocation of the spell. Comparing our two
 spells, we will notice that factorial's last operation is to apply
 the * operator whilst factorial2's last operation is a call to itself.
@@ -132,7 +132,7 @@ you should take from this is:
 
 1. Programs generate processes
 2. Recursive programs usually generate recursive processes
-3. Recursive program written in a tail call style generate iterative process
+3. Recursive programs written in a tail call style generate iterative processes
    if the compiler/interpretor in use supports it.
 4. Iterative processes are more efficient in their use of space
 
