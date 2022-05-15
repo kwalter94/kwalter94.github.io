@@ -7,11 +7,12 @@ order: 4
 Well, my name is Walter Kaunda if you don't already know. A social
 scientist by education (unfortunately) and a computer programmer
 by choice. I mostly program as a hobby, programming is an end in
-itself for me.
+itself for me. Although, getting paid to do it is kind of nice,
+I definitely prefer that over kumangolubwalubwa at home ndekha.
 
 ## Professional Work Experience
 
-Following is simply a high level overview of where I have worked
+Following is a high level overview of where I have worked
 and what tools I was using. If you need details on what exactly I
 was doing you can always ask for my C.V.
 
