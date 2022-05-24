@@ -1,6 +1,6 @@
 ---
 title: You Can't Eat Your Pie And Have it Too
-date: 2022-05-24
+date: 2022-05-24 19:00:00
 categories: [Databases]
 tags: [databases, distributed systems]
 ---
