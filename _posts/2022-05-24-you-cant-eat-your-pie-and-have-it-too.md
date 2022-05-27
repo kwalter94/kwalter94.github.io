@@ -15,7 +15,7 @@ CAP is short for the following terms:
     - All reads reflect the most recent writes regardless of which of partition of
       a system was written to and where the read has occured. NOTE: This is different
       from consistency in [ACID](https://en.wikipedia.org/wiki/ACID) of database
-      transations.
+      transactions.
 2. Availability
     - All reads are guaranteed to have data but they are not guaranteed to be consistent
       as above (that is, the data you get may not be of the most recent writes the
@@ -44,11 +44,13 @@ especially in the world of databases. Availability is a
 to hit even though the theory tells us otherwise. In theory, you can have a system
 that's always available but in practice humans are highly error prone. They create bugs
 like nobody's business and misconfigure systems for breakfast whilst existing in a world
-where [ESCOM](http://www.escom.mw/load-shedding-updates.php) is running the show.
+where [ESCOM](http://www.escom.mw/load-shedding-updates.php) is running the show. These
+factors are the main culprits when it comes to system downtime regardless of any
+availability guarantees coming from your architectural choices.
 In addition, CAP doesn't really reflect all the decisions people make when choosing
 a (NoSQL) database. To a large extent, people look at what their usage patterns on the
 database will be. For example, you may be thinking about things like "will I primarily be
-doing reads on this thing and do I need an immediate response everytime." It's that kind
+doing reads on this thing and do I need an immediate response everytime?" It's that kind
 of stuff that largely dominates these decisions. CAP in this case is not enough.
 
 ## Take a seat, remove your CAP (show some respect) and have this PIE with me
@@ -57,13 +59,15 @@ From the previous section, we know that CAP theorem may not be the best guiding 
 when making the choice of what NoSQL database technology to use. I didn't provide any
 information as to why this applies to NoSQL database, let me explain a tiny bit (sorry
 future self you used to be quite lazy - I suspect you still are). The existence of NoSQL
-database is to some extent from a need to enable easy horizontal scaling of storage. This
+databases is to some extent from a need to enable easy horizontal scaling of storage. This
 is in contrast to the traditional relational databases which mostly scale well vertically.
 If you need more performance or more space, get a bigger box. You don't really have much
 leeway in terms of adding more boxes. Thus CAP is something you will hear a lot of in the
 NoSQL world.
 
-Now let's look at why PIE matters more... First, let's unpack the term PIE:
+An alternative theory called PIE was proposed in order deal with the shortcomings of
+CAP. You could think of it as something that supercedes CAP but I prefer to look at
+it as more of a complement. Now, let's look at why PIE may matter more than CAP...
 
 1. Pattern flexibility
     - You can throw any kind of question to a database and you should be able to pull
