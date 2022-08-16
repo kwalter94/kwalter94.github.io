@@ -1,7 +1,7 @@
 ---
 title: Of Recursive Spells And Iterative Spirits
 date: 2022-05-14
-categories: [Functional Programming]
+categories: [Programming]
 tags: [functional, lisp, scheme, magic, witchcraft]
 ---
 
