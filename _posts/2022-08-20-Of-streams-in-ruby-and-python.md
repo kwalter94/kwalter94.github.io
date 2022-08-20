@@ -95,7 +95,7 @@ def process_dataset(dataset: Iterable[Any]):
     dataframe: dict[str, list[Any]] = {'field_a': [], 'field_b': []}
 
     for i, document in enumerate(dataset):
-        if i % MAX_DATAFRAME_SIZE:
+        if (i + 1) % MAX_DATAFRAME_SIZE == 0:
             flush_dataframe(dataframe)
             dataframe_buffer = {'field_a': [], 'field_b': []}
 
