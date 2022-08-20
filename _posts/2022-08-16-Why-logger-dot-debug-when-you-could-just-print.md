@@ -1,5 +1,5 @@
 ---
-title: Why logger.debug() when you could just print()
+title: Why logger.debug() when you could just print()?
 categories: [Programming]
 tags: [programming]
 date: 2022-08-16 20:50
