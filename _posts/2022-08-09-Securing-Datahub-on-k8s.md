@@ -2,7 +2,7 @@
 title: Securing Datahub on k8s
 date: 2022-08-09 18:00
 categories: [Data Engineering]
-tags: [data engineering,data discovery,data catalog,k8s,kubernetes]
+tags: [data engineering,data discovery,data catalog,k8s,kubernetes,notes]
 ---
 
 I found myself having to deploy [Datahub](https://datahubproject.io/) on
