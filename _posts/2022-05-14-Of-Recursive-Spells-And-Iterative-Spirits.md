@@ -2,7 +2,7 @@
 title: Of Recursive Spells And Iterative Spirits
 date: 2022-05-14
 categories: [Programming]
-tags: [functional, lisp, scheme, magic, witchcraft]
+tags: [programming, functional, lisp, scheme, magic, witchcraft]
 ---
 
 `Programs` are like magic spells, they conjure the spirits that roam the
