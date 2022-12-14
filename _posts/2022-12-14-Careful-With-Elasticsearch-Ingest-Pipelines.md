@@ -87,24 +87,25 @@ as part of the document itself within an Ingest Pipeline. For a field
 named `foobar`, I can access it by just referring to `foobar` in
 an Ingest Pipeline. With this feature, I can do the same with metadata
 fields like `_id`. So, when the data was coming into the Ingest
-Pipeline the `_id` I had as part of the document, was getting
+Pipeline, the `_id` I had as part of the document, was getting
 overriden by the document key I had as part of the `index` request.
 In addition, modifying these metadata does affect the document's
 actual metadata. So if I change an `_index` field's value, that
 would effectively change the index the document is written to.
 Strangely, although I had access to the source document through
-the `_src` metadata field in the Ingest Pipeline, modifying the
+the `_source` field in the Ingest Pipeline, modifying the
 `_id` through the source document had a net effect that was exactly
 the same as modifying the global `_id` (this looks to me like a bug
 in the Ingest Pipeline - I should at the very least be able to
-access the raw source document through `_src`).
+access the raw source document through `_source`).
 
 Moral of the story, I think that would be
 Read The Whole Fucking Manual (RTWFM). But even if I did, I am sure
 I still would have had trouble figuring out what was going on.
 I would have simply done something like
-`rename _src._id to something_else` which wouldn't have worked still.
-There is no easy work around for this as far as I know.
+`rename _source._id to something_else` which still wouldn't have
+worked. There is no easy work around for this as far as I know.
 
 ASIDE: Writing this has made me realise that having a no-op Ingest
-Pipeline would have actually worked. Think about it...
+Pipeline would have worked. I am not sure if Elasticsearch allows this
+though. Think about it...
