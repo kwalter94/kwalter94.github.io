@@ -32,6 +32,7 @@ WORKDIR /opt/django_app/
 
 COPY . /opt/django_app/
 
+RUN pip install poetry
 RUN poetry config virtualenvs.create false
 RUN poetry install $(test "$ENV" == production && echo "--no-dev") --no-interaction --no-ansi
 
