@@ -49,9 +49,9 @@ sense of what you are seeing without having any prior information. In the
 query what exactly is `p.name` supposed to be? A name of a pharmacy or a name
 of pants??? Of course, from the above you can guess that this is a name of
 person but still my point stands. For you to make sense of what __p__ is,
-you must scan ahead to the FROM part of the query to see what __p__ is
+you must scan ahead to the FROM part of the query to see what __p__ is.
 From that point on you need to maintain in your head that `p = people`.
-If there are a couple of more tables being joined to then you have to
+If there are a couple of more tables being joined to, then you have to
 maintain a mapping of all those aliases and must continuously substitute
 those aliases throughout the query. The query in itself might be complex and
 for some super self serving reason you decide to add unnecessary complexity
@@ -79,10 +79,10 @@ FROM people AS employees
 WHERE employees.type = 'Employee'
 ```
 
-In the above query, I am try to select all people that are employees.
+In the above query, I am trying to select all people that are employees.
 So by aliasing people to employees, I am effectively adding a bit more
 context to every reference I have of people in my query. A reader of
-the query sees employees and they understand what that is immediately
+the query sees employees and they understand what that is immediately,
 without needing to read ahead and track back.
 
 Another reason for aliasing is to remove unnecessary context. On this
@@ -102,7 +102,7 @@ that's going on. If you have used something like Django then you have
 probably run into this. Basically a Django project is an umbrella
 project to which you add a bunch of small applications (kind of bounded
 contexts in Domain Driven Design). Each application is namespaced in the
-database. So applications can have a domain model with the same name.
+database. So multiple applications can have a domain model with the same name.
 Now in the query above we are simply interested in people from the
 human_resources context. Continuously repeating that fact in the query
 does not really add much value. If you are looking at that query in
