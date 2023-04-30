@@ -5,6 +5,8 @@
 !.nojekyll
 !.travis.yml
 
+Gemfile.lock
+
 # bundler cache
 _site
 vendor
