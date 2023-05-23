@@ -53,7 +53,7 @@ Here is how I staged it all...
    between them
 
 Why did I pick 30 days... Well I figured that over long periods of time, the inflows of
-data do change. In the beginning getting 100 news per day was the standard, 3 months
+data do change. In the beginning getting 100 new rows per day was the standard, 3 months
 later the standard is now 10,000 rows per day. Trying to include all these data points
 would result in very large standard deviations making almost everything acceptable. Over
 a month the variations would be somewhat manageable.
@@ -66,7 +66,7 @@ How does this look in code???
 
 ```python
 from datetime import date, timedelta
-from pandas import dataset
+from pandas import Dataset
 
 today = date.today()
 start_date = today - datetime.timedelta(days=30)
