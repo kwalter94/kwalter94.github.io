@@ -1,6 +1,6 @@
 ---
 title: I Hate File System Based Routing
-date: 2023-07-30 22:00:00
+date: 2023-07-30 21:00:00
 categories: [Programming]
 tags: [programming, javascript, sveltekit]
 ---
