@@ -2,7 +2,7 @@
 title: How to Wait for Dependencies in Docker Compose
 date: 2022-12-18 22:30
 categories: [Programming]
-tags: [docker,backend,linux]
+tags: [docker, linux]
 ---
 
 Every once in a while you may find yourself having to deal with services

@@ -2,7 +2,7 @@
 title: FAM On That Crystal Meth
 date: 2023-07-27 18:00:00
 categories: [Programming]
-tags: [Crystal, C, Programming, Linux]
+tags: [crystal, c, linux]
 ---
 
 One thing that got me into [Crystal](https://crystal-lang.org/) is how easy creating C

@@ -1,7 +1,7 @@
 ---
 title: Careful With Them Elasticsearch Ingest Pipelines
 categories: [Databases]
-tags: [databases,elasticsearch,couchbase,notes]
+tags: [databases, elasticsearch, couchbase]
 date: 2022-12-14 17:40:00
 ---
 

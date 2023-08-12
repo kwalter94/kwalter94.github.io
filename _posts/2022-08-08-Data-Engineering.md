@@ -2,7 +2,7 @@
 title: Data Engineering
 date: 2022-08-08
 categories: [Data Engineering]
-tags: [data, data engineering, ETL, Streaming, backend]
+tags: [data, data engineering, ETL, streaming, backend]
 ---
 
 I felt like writing something today but really had nothing interesting to write about.

@@ -2,7 +2,7 @@
 title: Crystal Has Java-like Interfaces
 date: 2022-11-14 19:46:00
 categories: [Programming]
-tags: [Crystal, OOP, notes]
+tags: [crystal, oop]
 ---
 
 I love Crystal; I think it gets right pretty much everything that irks me
