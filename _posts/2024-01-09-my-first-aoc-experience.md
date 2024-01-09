@@ -71,9 +71,9 @@ efficient than what I was doing above.
 The other place where a cycle was involved was around something like finding the
 convergence point of multiple looping paths that have the same starting point. The naive
 way of solving this problem is to simultaneously traverse all paths until all paths
-converge at the starting point. For the input that was I provided the solution end up being
+converge at the starting point. For the input that was I provided the solution ended up being
 21,366,921,060,721 steps. There was no way I was brute-forcing my way to that answer. Try
-writing a program that just counts from 1 to a trillion and see how long it takes to
+writing a program that just counts from one to a trillion and see how long it takes to
 complete. If you are feeling lazy, let's do some quick maths... Assume that it takes a
 millisecond to increment your counter by one. To get to a thousand, you need a second.
 Within a minute you would have done sixty thousand. To get to a billion you would need
