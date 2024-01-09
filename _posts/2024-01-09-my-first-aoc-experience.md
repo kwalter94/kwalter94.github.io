@@ -101,7 +101,7 @@ outside. You start with a cell (pixel), give it a colour and then move onto the 
 and give it the same colour if it's not on the path and so on... My idea was that I just
 count the number of cells (pixels) with the colour on the inside in the end. I run into
 some issues with this approach. First, it was near impossible for me to just look at the
-input I was given and sayhttps://en.wikipedia.org/wiki/Point_in_polygon#Ray_casting_algorithm this is the inside of the loop and that's the outside. Still,
+input I was given and say this is the inside of the loop and that's the outside. Still,
 with this solution I should have still got the answer. I would have had two values, one
 for the inside and another for the outside. But then there was a second problem, there
 were some hard edge cases that I failed to handle with my flood fill. Trying to add a fix
