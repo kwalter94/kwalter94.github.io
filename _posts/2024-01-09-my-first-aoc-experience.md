@@ -46,17 +46,12 @@ graph as I traverse the possible paths. Cycle detection was happening at the poi
 adding a vertex to the graph. I would check if the vertex and its edge already exist in
 the graph. You can see an example of this
 [here](https://github.com/kwalter94/aoc/blob/6bd92cd4383874cbe635b477a196032153ee5e65/2023/16/part-2.cr#L142).
-Shout out to
-[Floyd's algorithm](https://en.wikipedia.org/wiki/Cycle_detection#Floyd's_tortoise_and_hare).
-I didn't get to use it but I had it locked and loaded, ready for firing after I saw
-that cycles and graphs were a thing. I was representing my graph as a map of vertices to
-edges. Here an example:
+I was representing my graph as a map of vertices to edges.
 
 ```crystal
 alias Point = Tuple(Int32, Int32)
 graph = {} of Point => Array(Point)
 ```
-
 Above is a snippet of a graph that I have
 [here](https://github.com/kwalter94/aoc/blob/6bd92cd4383874cbe635b477a196032153ee5e65/2023/16/part-2.cr#L5).
 The `Point` is a vertex and then I have it mapped to an array of other `Point`s. Those
@@ -65,6 +60,13 @@ attributes for each edge hence why I just have the `Point`. Having the graph as 
 makes looking up vertices very easy. There are other ways to represent graphs
 (e.g. tree-like structures) but if you are going to be randomly looking up vertices then
 a map should be one of the first base data structures to reach out for.
+
+> Shout out to
+[Floyd's algorithm](https://en.wikipedia.org/wiki/Cycle_detection#Floyd's_tortoise_and_hare).
+I didn't get to use it but I had it locked and loaded, ready for firing after I saw
+that cycles and graphs were a thing.
+{: .prompt-info }
+
 
 The other place were a cycle was involved was around something like finding the
 convergence point of multiple looping paths that have the same starting point. The naive
