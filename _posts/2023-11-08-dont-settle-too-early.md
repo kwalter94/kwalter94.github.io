@@ -41,7 +41,7 @@ itself a lot."
 Eric S. Raymond - [How To Become A Hacker](https://www.catb.org/~esr/faqs/hacker-howto.html)
 
 When I was starting my journey into programming, one of the first articles I went through
-was [ESR](https:://www.catb.org/esr/)'s Hacker How-To. One thing I learnt from it was
+was [ESR](https://www.catb.org/esr/)'s Hacker How-To. One thing I learnt from it was
 that there are tools out there that I will learn for the sake of learning. I might never
 use the tools themselves in any real life projects but the lessons I learn from those
 tools will help me be better at whatever tool I stick to. This idea is summed up in the
