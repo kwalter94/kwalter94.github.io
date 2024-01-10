@@ -134,7 +134,7 @@ If there is one thing you can take from this is that you should not keep yoursel
 learning more languages, frameworks, etc beyond what you primarily use. Some ideas are
 easier to grok from a different perspective than the one your immediate tools give you.
 
-## Exploring beyond different tools can help you see the limitations of your current tools
+## Exploring different tools can help you see the limitations of your current tools
 
 Most tools have communities around them. These communities tend to advocate different
 approaches to problem solving. Take web programming for example: if I want to build
@@ -154,23 +154,84 @@ these things are helping me avoid. I believe that the knowledge required for me 
 able to make such decisions makes me overall a better developer compared to how
 I would be if I was never pushed to learn these things at some point.
 
-Consider HTML templating engines, I know
-that most templating engines help me avoid XSS issues in some way. Almost all
-engines automatically escape HTML for me. To opt out of this I need to be explicit
-about my intentions. The idea that XSS is a potential issue was only hammered down
-into my brain because of my exposure to templating engines.
+Consider HTML templating engines, I know that most templating engines help me avoid
+XSS issues in some way. Almost all engines automatically escape HTML for me. To opt
+out of this I need to be explicit about my intentions. The idea that XSS is
+a potential issue was only hammered down into my brain because of my exposure
+to templating engines.
 
 Of course, there are full blown frameworks in those languages that make these decisions
 for you. However, you will mostly find that developers prefer making these decisions for
-themselves. For
+themselves. The culture around these languages will you push into becoming a developer
+who strives to have a deeper understanding of the various bolts and nuts that go into
+building a web application. Contrast this with web development in something like Python.
+From my experience of web development in Python, the culture there tends more towards
+batteries included web frameworks like Django. If your first experience in web development
+is in Python, you will likely be driven towards Django (there are microframeworks
+like Flask and FastAPI but I hardly see these recommended to beginner web developers).
 
-If you look at web development in Python on the other hand, you have to
-choose a framework before you can do anything significant at all. Contrast all this with
-web development in PHP. You don't necessarily need to make any of these decisions in PHP.
-You don't need to choose what router you want or even pick a framework at all. Most people
-do learn how to build web applications in PHP without ever touching on the items I have
-listed above.
+With Django, you will just get all the pieces that you need to build a web application
+without getting much context as to why those pieces are there. So, out of the gate,
+you will likely learn more about what goes into a web application if you pick
+something like Go over Python. With Python you will likely be able to put together
+something of significant complexity faster than you would in Go. On the flip side,
+by the time you get to build something with similar complexity in Go, you will
+have a deeper understanding of web development in general. If you start with
+Python, learning web development in Go later might give you a fuller understanding
+of all the components that make up Django. If all you are is a Go web developer,
+web development in Python might teach you how to build web applications quickly.
+
+In sum, what I am trying to say here is that after you learn and get
+comfortable with your raw dog PHP, look at Laravel. When you are done
+with Laravel maybe look at web development in Javascript or some other
+language. You don't have to become an expert in the other environments.
+Know enough to be dangerous as some say. The further you go, the deeper
+your understanding of web development becomes. The more you know, the
+clearer the limitations of your current tools (and the ones you are exploring)
+become to you. This goes beyond web frameworks, things as simple as style are
+approached differently in different communities.
+
+> You can't learn everything but then you just can't settle on one thing and
+ignore everything else. Try scouring places like [dev.to](https://dev.to)
+or [diff.blog](https://diff.blog) to learn about what people are doing out there.
+If you see something interesting, check it out sometime. Quickly browsing a tools
+documentation is more than enough in my opinion. You can deep dive if you see
+something really interesting.
+{: .prompt-info }
 
 ## Demand may simply reflect the lack of information not people's needs
 
-... Ndimalizisabe ...
+"You only really need to know PHP (and HTML... and Javascript... and CSS) to get
+developer gigs in Malawi because that's what the market demands." That's
+a sentiment you will hear quite often among the software development elders in Malawi.
+That's a fact and I can't argue against it. However, I don't believe this should
+be the primary reason that entices you to specialise in PHP or whatever is in demand.
+Consumers (ie. people looking for software development services) will only demand for
+what they know, not necessarily what they need. We as the supply side of web development
+services in Malawi have convinced the demand side that PHP is the (only?) way to build web
+applications. We have more information than the demand side has. If the demand side
+had perfect information about what options are available, would it still *always*
+choose PHP? I personally don't have a definite answer but looking at the top developer
+employers in Malawi whose demand for developers is largely driven by other developers,
+I am inclined to say no!!!
+
+We almost all tend to argue that we are developing applications for a resource
+constrained country. If that's truly the case then what the Malawi market needs
+are languages (tech) that minimise operating/running costs and not necessarily
+just development costs. The way I see the market in Malawi is that the services
+offered are optimised for developer productivity (PHP ranks very high when it
+comes to shipping applications quickly). I am certain that for any substantially
+complex application in PHP or Ruby, we can build an equivalent in something like
+Rust or Go. The Rust/Go application's operating costs will likely be a fraction of
+the PHP/Ruby application. If the customer who we are building the application for
+had access to this information, would they still be okay with PHP? Say you pose to
+your customer with a question like "With some increase in the development cost,
+I could cut down on how much you will have to pay monthly in keeping this application
+running for the rest of its life?" You would probably have to provide detailed
+information on how much the development cost increases and how much the operating
+costs decrease.
+
+To some extent, I believe the high demand for PHP on our developer market
+is a reflection of lack of information on the demand side.
+
+***To be continued...***
