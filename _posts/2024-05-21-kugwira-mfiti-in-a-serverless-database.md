@@ -1,5 +1,5 @@
 ---
-title: Kugwira Ufiti in a Serverless Database
+title: Kugwidwa Ufiti in a Serverless Database
 date: 2024-05-21 16:00:00
 categories: [Databases, Data Engineering]
 tags: [snowflake, databases, data engineering, data warehouses]
