@@ -107,7 +107,8 @@ in a serverless environment as if we were in a self-managed environment.
 In a self-managed environment we can afford to be wasteful because we
 don't really need to think about costs relative to what we were doing.
 What we were doing only mattered when we tripped on each other. I am
-slowing down the database because of a heavy that I am running for example.
+slowing down the database because of a heavy query that I am running
+for example.
 
 ## Measuring User/Role/Query Impact on a Serverless database
 
